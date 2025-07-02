@@ -66,9 +66,41 @@ manager has read-only for non directy reports
 position hierarchy allows you to define various positions in the organization and arrange the hierarchy by using the Position table
 both models require atleast read-only access to the table being used in a hierarchy approach
 performance tips: keep hierarchy to 50 users or less, use depth to reduce read only level access, create minimum number of business units
-datavesre supports two types of record ownership: organization owned and user or team owned. 
+datavesre supports two types of record ownership: organization owned and user or team owned.
 user and team-owned records access levels: organizational, business unit, business unit and child, only the users own records
 dataverse record should be used an exception, since security models are not always fully implemented environment wide when used
 dataverse record sharing with teams is more efficient, access teams is another more advanced option that auto creates the team and share record access.
 
+---
+
+views
+types of views: System (quick find, advanced find, associated, lookup), public, personnel
+user can save their own view
+single column sort by selecting column in view which will lead to saving a personnel view
+sort view: can only sort on columns in view
+
+---
+
+## templates
+
+ways to create word teplates: advanced settings (by admins and system customizers), from a specific record (main form) or list(view) as personal views
+
+anyone can create personnel templates
+you may need to refersh an excel template if the pivot table shows outdated information
+you must select a record in order to use word templates
+
+model driven app export options: open in excel online, static worksheet, static worksheet (page only), dyanmic worksheet
+, dynamic pivot table
+100k is max row limit on static worksheets , unless the page only version of static worksheet is selected
+edit in exel is also an option, but you need to have the excel power apps add in installed
+
+-------------------
+## dataverse and azure tools
+----------------------
+dataverse can be linked with Azure synapse analytics for full sql, big data apache spark engin, scalable, similar to data factory integrations, continous replication, transformation layer, big data analytics
+list of tables to use is defined in the power portal link definition
+
+xrmtoolbox - can be used for configuration, documentatino, migration and reporting
+
+https://www.xrmtoolbox.com/
 
